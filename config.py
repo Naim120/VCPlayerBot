@@ -31,24 +31,24 @@ except ModuleNotFoundError:
 class Config:
     #Telegram API Stuffs
     load_dotenv()  # load enviroment variables from .env file
-    ADMIN = os.environ.get("ADMINS", '')
-    SUDO = [int(admin) for admin in (ADMIN).split()] # Exclusive for heroku vars configuration.
-    ADMINS = [int(admin) for admin in (ADMIN).split()] #group admins will be appended to this list.
-    API_ID = int(os.environ.get("API_ID", ''))
-    API_HASH = os.environ.get("API_HASH", "")
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "")     
-    SESSION = os.environ.get("SESSION_STRING", "")
+    ADMIN = '1185346119'
+    SUDO = [1185346119] # Exclusive for heroku vars configuration.
+    ADMINS = [1185346119] #group admins will be appended to this list.
+    API_ID = '1492128'
+    API_HASH = "496a1aab7943406f28e3de49fff16ea2"
+    BOT_TOKEN = "5436282903:AAHx-JLzqN4xdlQoq9zUACYPln25q0G9tH0"     
+    SESSION = "BQCpNwansLPxqhrmXuIpgJZtxSbxlxmPzuUAEHbwsAMoTEXhZpuVU1NOWjp929_Qd4QNP35UiELSfjDzYcqaBFDEvj7K2QEkTqaY3SryJSW0TBbtqgWTFXKlsliELW22Go1WTjWTXJtCX4YBXzHEG2BIGdjdA_b6wkURGlXD_tvgTWWjTOHaAaRANhiTdnkdTsSkwAOPGX-dVF82e27wHmOo0HMwrwYTc-exHcaeAA5_VqR79b6Bg1eyHwaXk-lsWv5r4Xz3uQsb0FR_GNx7ArQI5RJMCt4lfLi8ilIiSH0xA9J-ZOC2cXHpiZ67PgeVPtuB3prSxtH2rnk07NBvY2gERqbyRwA"
 
     #Stream Chat and Log Group
-    CHAT = int(os.environ.get("CHAT", ""))
-    LOG_GROUP=os.environ.get("LOG_GROUP", "")
+    CHAT = "-1001450924986"
+    LOG_GROUP="-1001504631004"
 
     #Stream 
     STREAM_URL=os.environ.get("STARTUP_STREAM", "https://www.youtube.com/watch?v=zcrUCvBD16k")
    
     #Database
-    DATABASE_URI=os.environ.get("DATABASE_URI", None)
-    DATABASE_NAME=os.environ.get("DATABASE_NAME", "VCPlayerBot")
+    DATABASE_URI=mongodb+srv://skdb:skdb12@cluster0.o9bn9.mongodb.net/skdb?retryWrites=true&w=majority
+    DATABASE_NAME="skdb"
 
 
     #heroku
@@ -59,7 +59,7 @@ class Config:
     #Optional Configuration
     SHUFFLE=is_enabled(os.environ.get("SHUFFLE", 'True'))
     ADMIN_ONLY=is_enabled(os.environ.get("ADMIN_ONLY", "False"))
-    REPLY_MESSAGE=os.environ.get("REPLY_MESSAGE", False)
+    REPLY_MESSAGE=os.environ.get("REPLY_MESSAGE", True)
     EDIT_TITLE = os.environ.get("EDIT_TITLE", True)
     #others
     
