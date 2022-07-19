@@ -40,14 +40,14 @@ class Config:
     SESSION = "BQCpNwansLPxqhrmXuIpgJZtxSbxlxmPzuUAEHbwsAMoTEXhZpuVU1NOWjp929_Qd4QNP35UiELSfjDzYcqaBFDEvj7K2QEkTqaY3SryJSW0TBbtqgWTFXKlsliELW22Go1WTjWTXJtCX4YBXzHEG2BIGdjdA_b6wkURGlXD_tvgTWWjTOHaAaRANhiTdnkdTsSkwAOPGX-dVF82e27wHmOo0HMwrwYTc-exHcaeAA5_VqR79b6Bg1eyHwaXk-lsWv5r4Xz3uQsb0FR_GNx7ArQI5RJMCt4lfLi8ilIiSH0xA9J-ZOC2cXHpiZ67PgeVPtuB3prSxtH2rnk07NBvY2gERqbyRwA"
 
     #Stream Chat and Log Group
-    CHAT = "-1001450924986"
+    CHAT = -1001450924986
     LOG_GROUP="-1001504631004"
 
     #Stream 
     STREAM_URL=os.environ.get("STARTUP_STREAM", "https://www.youtube.com/watch?v=zcrUCvBD16k")
    
     #Database
-    DATABASE_URI=mongodb+srv://skdb:skdb12@cluster0.o9bn9.mongodb.net/skdb?retryWrites=true&w=majority
+    DATABASE_URI="mongodb+srv://skdb:skdb12@cluster0.o9bn9.mongodb.net/skdb?retryWrites=true&w=majority"
     DATABASE_NAME="skdb"
 
 
